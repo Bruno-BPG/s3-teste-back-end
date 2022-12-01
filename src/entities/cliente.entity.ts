@@ -24,7 +24,7 @@ export class Cliente {
     @CreateDateColumn()
     created_at: Date
 
-    @OneToMany(() => Contatos,(contato)=>contato.clientee)
+    @OneToMany(() => Contatos,contato=>contato.clientee)
     contato: Contatos[]
 
     constructor() {

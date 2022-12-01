@@ -20,8 +20,8 @@ export class Contatos {
     @Column()
     telefone: string
 
-    @ManyToOne(() => Cliente)
-    clientee: Cliente
+    @ManyToOne(() => Cliente,{eager: true})
+    clientee: any
 
     constructor() {
         if (!this.id) {

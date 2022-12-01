@@ -1,10 +1,11 @@
 export interface IUser {
-    id: string
+    telefone: string
     name: string
     email: string
 }
 
 export interface IUserCreate {
+    id: string
     name: string
     email: string
     telefone: string

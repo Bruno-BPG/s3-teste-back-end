@@ -1,15 +1,21 @@
 import { Router } from "express";
 
-// instanciamos o Router
 const routes = Router()
 
-// importamos os Controllers
-import userCreateController from "./controllers/users/userCreate.controller";
-import userListController from "./controllers/users/userList.controller"
+// clientes
+import userCreateController from "./controllers/clientes/userCreate.controller";
+import userListController from "./controllers/clientes/userList.controller"
 
-// definimos as rotas
-routes.post('/users', userCreateController)
-routes.get('/users', userListController)
+// contatos
+import contatosCreateController from "./controllers/contatos/contatosCreate.controller";
+import contatosListController from "./controllers/contatos/contatosList.controller"
 
-// e exportamos as rotas
+// clientes
+routes.get('/cliente', userListController)
+routes.post('/cliente', userCreateController)
+
+// contatos
+routes.get('/contatos', contatosListController)
+routes.post('/contatos/:id', contatosCreateController)
+
 export default routes
