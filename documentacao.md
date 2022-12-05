@@ -1,14 +1,16 @@
 as bibiotecas que eu usei foram 
 
 react-router-dom@5
-yup
-@hookform/resolvers
+express 
+typeorm
 typescript
 uuid
+pg 
+dotenv
+reflect-metadata
 
 para iniciar esse projeto e necessario rodas os comandos 
 - yarn 
-- yarn start 
-para o codigo funcionar o back end ja deve estar ativo 
+- yarn dev 
 
-esse projeto funciona como um aplicativo de contatos onde o usuario pode se cadastrar e adicionar contatos 
+esse projeto funciona como uma api para um aplicativo de contatos onde o usuario como criar uma conta e adicionar contatos 
