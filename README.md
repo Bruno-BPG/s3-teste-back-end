@@ -1,7 +1,20 @@
 # s3-teste
 
-<!-- 
-yarn typeorm migration:create src/migrations/nome-da-migration
-yarn typeorm migration:generate src/migrations/nome-da-migration -d src/data-source.ts
-yarn typeorm migration:run -d src/data-source.ts 
--->
+as bibiotecas
+
+react-router-dom@5
+express 
+typeorm
+typescript
+uuid
+pg 
+dotenv
+reflect-metadata
+
+para iniciar esse projeto e necessario
+- adicionar um arquivo .env seguindo o modelo do .env.example
+- yarn 
+- yarn typeorm migration:run -d src/data-source.ts
+- yarn dev 
+
+esse projeto funciona como uma api para um aplicativo de contatos onde o usuario como criar uma conta e adicionar contatos 
